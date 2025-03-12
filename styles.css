@@ -70,8 +70,28 @@ body {
     font-size: 3em;
     color: red;
     position: absolute;
-    left: 50%;
+    left: 0%;
     bottom: 0%;
+    animation: take-off-and-land 10s infinite;
+}
+
+@keyframes take-off-and-land {
+    10% {
+        left: 0%;
+        bottom: 70%;
+    }
+    20% {
+        left: 0%;
+        bottom: 70%;
+    }
+    60% {
+        left: 90%;
+        bottom: 70%;
+    }
+    80% {
+        left: 90%;
+        bottom: 0%;
+    }
 }
 
 /** Exercise 1.4 - add animation properties to each of the following classes (see guidance) **/
@@ -116,6 +136,7 @@ body {
 /** Exercise 1.2 adding turbulance **/
 
 .turbulence {
+    top: 50%;
     animation: turbulence 0.25s infinite alternate;
 }
 
