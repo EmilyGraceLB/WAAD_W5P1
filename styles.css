@@ -136,7 +136,6 @@ body {
 /** Exercise 1.2 adding turbulance **/
 
 .turbulence {
-    top: 50%;
     animation: turbulence 0.25s infinite alternate;
 }
 
