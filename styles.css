@@ -97,3 +97,39 @@ body {
     left:100%;
     bottom:0%;
 }
+
+/** Exercise 1.1 background animation **/
+
+.slide-left {
+    animation: slide-left 10s linear infinite;
+}
+
+@keyframes slide-left {
+    from {
+        left: 0%;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+/** Exercise 1.2 adding turbulance **/
+
+.turbulence {
+    animation: turbulence 0.25s infinite alternate;
+}
+
+@keyframes turbulence {
+    5% {
+        transform: translate(0%,100%);
+    }
+    10% {
+        transform: translate(0%,115%);
+    }
+    15% {
+        transform: translate(0%,85%);
+    }
+    20% {
+        transform: translate(0%,100%);
+    } 
+}
