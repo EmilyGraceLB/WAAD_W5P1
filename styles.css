@@ -153,3 +153,40 @@ body {
         transform: translate(0%,100%);
     } 
 }
+
+/** Exercise 1.4 Creating sunset animation **/
+
+/** Moving sun and moon icons around the screen **/
+.sun-container {
+    animation: sunAndMoon 10s infinite linear;
+}
+
+@keyframes sunAndMoon {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/** background colour animation **/
+
+.background {
+    animation: colourChange 10s infinite linear;
+}
+
+@keyframes colourChange {
+    25% {
+        background-color: lightblue;
+    }
+    50% {
+        background-color: rgb(234, 184, 91);
+    }
+    75% {
+        background-color: rgb(151, 77, 151);
+    }
+    100% {
+        background-color: rgb(66, 96, 105);
+    }
+}
