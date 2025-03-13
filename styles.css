@@ -172,21 +172,21 @@ body {
 
 /** background colour animation **/
 
-.background {
+.background-dayNight {
     animation: colourChange 10s infinite linear;
 }
 
 @keyframes colourChange {
-    25% {
+    15% {
         background-color: lightblue;
     }
-    50% {
+    45% {
         background-color: rgb(234, 184, 91);
     }
     75% {
         background-color: rgb(151, 77, 151);
     }
-    100% {
+    90% {
         background-color: rgb(66, 96, 105);
     }
 }
